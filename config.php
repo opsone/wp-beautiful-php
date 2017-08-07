@@ -13,7 +13,7 @@ class WP_Beautiful_Config
               ->notPath('wp-config.php')
           ;
 
-        if (file_exists('wp-beautiful.yml')) {
+        if (file_exists('wp-cli.yml')) {
             $config_env = Yaml::parse(file_get_contents('wp-cli.yml'));
 
             if (!empty($config_env['php-fixer']['excludes'])) {
