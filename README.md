@@ -56,3 +56,9 @@ Some PHP CS Fixer options are set by default :
 ```
 
 Please refer to the PHP CS Fixer Github documentation to get more informations about that.
+
+
+## Uninstall
+```
+wp package uninstall opsone/wp-beautiful-php
+```
