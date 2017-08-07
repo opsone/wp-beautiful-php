@@ -1,0 +1,20 @@
+{
+    "name": "opsone/wp-beautiful-php",
+    "description": "Make your PHP so beautiful",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valentin Soyer",
+            "email": "valentin.soyer@opsone.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "wp-cli/wp-cli": ">=0.14",
+        "friendsofphp/php-cs-fixer": "^2.4",
+        "symfony/yaml": "~2.7"
+    },
+    "autoload": {
+        "files": [ "beautiful-maker.php" ]
+    }
+}
