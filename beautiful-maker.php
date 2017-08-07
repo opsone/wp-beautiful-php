@@ -11,7 +11,12 @@ class WP_Beautiful_Command extends WP_CLI_Command {
     private static $_php_fixer_options;
 
     public function __construct() {
-        self::$_php_fixer_bin     = dirname(__FILE__) . "/vendor/bin/php-cs-fixer";
+        if (file_exists(__DIR__ . '/../../autoload.php')) {
+            self::$_php_fixer_bin = dirname(__FILE__) . "/../../bin/php-cs-fixer";
+        } else {
+            self::$_php_fixer_bin = dirname(__FILE__) . "/vendor/bin/php-cs-fixer";
+        }
+
         self::$_config            = new StdClass();
         self::$_php_fixer_options = array(
             '--verbose',
