@@ -19,7 +19,7 @@ Fix all php files in wp-content/themes folder.
 Fix all php files in 'mytheme' theme folder.
 
 ## Options
-You can create a wp-beautiful.yml file to add some options to commands. For example, you can exclude some files or folders.
+You can create a wp-cli.yml file to add some options to commands. For example, you can exclude some files or folders.
 
 ```
 php-fixer:
@@ -41,7 +41,7 @@ wp-content/plugins
 wp-config.php
 ```
 
-You can set some files or folders to exclude with the wp-beautiful.yml option file.
+You can set some files or folders to exclude with the wp-cli.yml option file.
 
 
 Some PHP CS Fixer options are set by default :

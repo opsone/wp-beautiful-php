@@ -14,7 +14,7 @@ class WP_Beautiful_Config
           ;
 
         if (file_exists('wp-beautiful.yml')) {
-            $config_env = Yaml::parse(file_get_contents('wp-beautiful.yml'));
+            $config_env = Yaml::parse(file_get_contents('wp-cli.yml'));
 
             if (!empty($config_env['php-fixer']['excludes'])) {
                 $excludes = $config_env['php-fixer']['excludes'];
